@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="hangman-container">
+    <h1 class="title">HANGMAN</h1>
+    <div id="word-container"></div>
+    <div id="game-controls">
+      <div id="alphabet-container"></div>
+      <div id="timer-container">Time left: <span id="timer">60</span> seconds</div>
+    </div>
+    <button id="reset-btn">New Game</button>
+    <button id="hint-btn">Hint</button>
+  </div>
+
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="result-message"></div>
+      <button id="play-again-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
